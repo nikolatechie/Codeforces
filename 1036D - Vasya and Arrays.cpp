@@ -41,7 +41,7 @@ int main()
         s -= b[t1];
     }
 
-	// no answer if sums are different
+    // no answer if sums are different
     if (s)
     {
         cout << "-1\n";
@@ -56,8 +56,8 @@ int main()
         llint s1 = a[t1], s2 = b[t2];
         ++ans;
 
-		// if sums are different, find the shortest segments
-		// with equal sums and replace them by their sums
+	// if sums are different, find the shortest segments
+	// with equal sums and replace them by their sums
         while (s1 != s2)
         {
             if (s1 < s2)
