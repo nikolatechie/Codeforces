@@ -38,7 +38,7 @@ int main()
 
     cin >> n >> x >> y;
     pairs = n;
-    pairs *= (pairs-1); // set its value to number of all pairs
+    pairs *= (pairs-1); // set its value to number of all pairs, and later subtract number of prohibited paths
     g.resize(n+1);
     sz.resize(n+1);
     p.resize(n+1);
