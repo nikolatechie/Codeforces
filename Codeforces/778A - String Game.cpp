@@ -1,26 +1,20 @@
 #include <bits/stdc++.h>
-#include <ext/rope>
 using namespace std;
-using namespace __gnu_cxx;
 
 using ci = const int;
 using ld = long double;
 using llint = long long;
 using ullint = unsigned long long;
 using pii = pair <int,int>;
-using pcc = pair <char,char>;
-using pss = pair <string,string>;
 using vi = vector <int>;
 using vb = vector <bool>;
 using vii = vi::iterator;
 
 #define INF (1<<30)
 #define MOD 1000000007
-#define mt make_tuple
 #define all(c) c.begin(), c.end()
 #define ms(name,val) memset(name, val, sizeof name)
-#define np nullptr
-// inline functions
+
 
 
 ci N = 200005;
