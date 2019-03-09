@@ -19,10 +19,10 @@ int color[MX], par[MX], rnk[MX], sz[MX];
 // find-set function
 int fs(int x)
 {
-    return (par[x] == x) ? x:(par[x] = fs(par[x]));
+    return (par[x] == x) ? x:(par[x] = fs(par[x])); // path compression
 }
 
-// union-set function
+// union-set function (union by rank)
 void us(int a, int b)
 {
     int x = fs(a), y = fs(b);
@@ -32,14 +32,14 @@ void us(int a, int b)
     {
         par[y] = x;
         sz[x] += sz[y];
-        v[x].insert(v[x].end(), all(v[y])); // error?
+        v[x].insert(v[x].end(), all(v[y]));
         v[y].clear();
     }
     else
     {
         par[x] = y;
         sz[y] += sz[x];
-        v[y].insert(v[y].end(), all(v[x])); // error?
+        v[y].insert(v[y].end(), all(v[x]));
         v[x].clear();
         if (rnk[x] == rnk[y]) ++rnk[y];
     }
