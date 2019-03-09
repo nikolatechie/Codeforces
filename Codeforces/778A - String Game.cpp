@@ -16,7 +16,6 @@ using vii = vi::iterator;
 #define ms(name,val) memset(name, val, sizeof name)
 
 
-
 ci N = 200005;
 int n, m;
 string a, b;
