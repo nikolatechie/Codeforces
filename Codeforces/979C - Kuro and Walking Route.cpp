@@ -57,7 +57,7 @@ int main()
     while (p[x] != y) x = p[x]; // LCA of x and y will be y, so go up until it's parent of x
     beetopiaSize -= sz[x]; // don't consider paths which don't cross Beetopia
 
-    cout << pairs-(flowrisaSize*beetopiaSize) << '\n';// this is the final answer
+    cout << pairs-(flowrisaSize*beetopiaSize) << '\n'; // this is the final answer
 
 
     return 0;
