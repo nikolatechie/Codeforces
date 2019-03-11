@@ -17,7 +17,7 @@ using vii = vi::iterator;
 #define ms(name,val) memset(name, val, sizeof name)
 
 
-// finds highest power of two which is les than or equal to r
+// finds highest power of two which is less than or equal to r
 llint highestPower(llint r)
 {
     llint p = 1;
