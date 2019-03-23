@@ -32,13 +32,13 @@ int main()
     for (int t1 = 0; t1 < n; ++t1)
     {
         cin >> r[t1];
-        xr ^= r[t1];
+        xr ^= r[t1]; // XOR of all XORs of rows
     }
 
     for (int t1 = 0; t1 < m; ++t1)
     {
         cin >> c[t1];
-        xc ^= c[t1];
+        xc ^= c[t1]; // XOR of all XORs of columns
     }
 
     if (xr != xc)
