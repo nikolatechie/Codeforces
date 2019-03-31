@@ -70,10 +70,10 @@ int main()
   	for (int i = 0; i < k; i++)
     	ans = (1LL * ans * n) % MOD; // total number of sequences of length k
 
-  	for (int x : cmp)
+  	for (int x: cmp)
     	ans = ((ans - f(x, k)) % MOD + MOD) % MOD; // remove the bad sequences from each component
 
-  	cout << ans << endl;
+  	cout << ans << '\n';
 
 
   	return 0;
