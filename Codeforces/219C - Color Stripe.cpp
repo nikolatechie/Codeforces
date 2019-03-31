@@ -28,7 +28,7 @@ int main()
     cin >> n >> k >> s;
 
     // if only 2 characters are allowed, then it has to be an alternating sequence:
-    // chose the cheaper one between "ABABA.." and "BABAB.."
+    // choose the cheaper one between "ABABA.." and "BABAB.."
     if (k == 2)
     {
         string a = "A", b = "B";
