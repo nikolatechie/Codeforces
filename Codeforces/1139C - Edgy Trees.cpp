@@ -44,7 +44,7 @@ int main()
 
   	cin >> n >> k;
 
-  	for (int i = 1; i < n; ++i)
+    for (int i = 1; i < n; ++i)
   	{
     	int a, b, t;
     	cin >> a >> b >> t;
