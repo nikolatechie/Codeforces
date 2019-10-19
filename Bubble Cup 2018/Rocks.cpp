@@ -1,4 +1,4 @@
-// Treap solution for Bubble Cup 2018's problem Rocks
+// My Treap solution for Bubble Cup 2018's problem Rocks
 #include <bits/stdc++.h>
 #include <ext/rope>
 using namespace std;
